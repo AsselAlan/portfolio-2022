@@ -1,0 +1,116 @@
+.modalProyect{
+    background-color: black;
+    width: 60% !important;
+    height: 100vh;
+    max-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.offcanvas-body{
+    height: 80%;
+    padding: 10rem;
+    overflow-y: hidden;
+}
+
+.btnClose{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.btnLink{ 
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.btnLink span{
+    font-size: 3rem;
+}
+
+.btnLink:hover span{
+    color: #7BC5B5;
+}
+
+.btnClose:hover svg path{
+    stroke: #7BC5B5;
+    width: 10px;
+}
+
+.containerImg{
+    width: 100%
+}
+
+.containerImg div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.containerImg div img{
+    width: 100%;
+    max-width: 500px;
+}
+
+.containerInfo{
+    padding-top: 5rem;
+    width: 100%;
+    height: 50%;
+}
+
+.containerInfo .tecnologias{
+    padding-top: 1rem;
+}
+
+
+@media (max-width: 767px) {
+    .offcanvas{
+        width: 100% !important;
+        padding-top: 15%;
+    }
+    .offcanvas-body{
+        padding: 5rem;
+        padding-top: 0rem;
+        height: 100%;
+    }
+
+    .containerImg{
+        width: 100%;
+        height: 50%;
+        max-width: 600px;
+    }
+
+    .containerImg div{
+        align-items: center;
+    }
+
+    .btnLink{
+        bottom: 25%;
+    }
+    
+    .btnLink span{
+        font-size: 4rem;
+    }
+
+    .btnClose svg{
+        width: 3rem;
+    }
+    
+    .containerInfo{
+        padding-top: 3rem;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .containerInfo .tecnologias{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
